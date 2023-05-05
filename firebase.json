@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/ssr-with-angular/browser",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

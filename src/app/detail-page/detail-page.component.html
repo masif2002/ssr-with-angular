@@ -1,1 +1,37 @@
-<p>detail-page works!</p>
+<h1>Customer Details</h1>
+
+
+<mat-card>
+        <p>This content is pre-rendered with Angular Universal and NestJS.</p>  
+
+        Paste URL: <pre>https://ssr-with-angular.web.app/{{customerId}}</pre>
+
+        <!-- Buttons Container -->
+        <div>
+          <a href="https://cards-dev.twitter.com/validator" target="blank" mat-stroked-button color="accent" >Twitter Card Validator</a>
+  
+          <button 
+            mat-raised-button 
+            routerLink="/">
+            
+            BACK
+          </button>
+        </div>
+
+</mat-card>
+
+    
+
+<mat-card *ngIf="customer | async as cust">
+  <mat-card-header>
+    <mat-card-title>
+      <h2>{{ cust.name }}</h2>
+    </mat-card-title>
+  </mat-card-header>
+  <img mat-card-image [src]="cust.image" alt="** insert beautiful face **" />
+  <mat-card-content>
+    <p>
+      "{{ cust.bio }}"
+    </p>
+  </mat-card-content>
+</mat-card>

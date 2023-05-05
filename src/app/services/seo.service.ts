@@ -10,6 +10,7 @@ export class SeoService {
   constructor(private title: Title, private meta: Meta, private router: Router) {}
 
   generateTags({title = '', description = '', image = ''}) {
+    console.log('Generating tags....');
     
     this.title.setTitle(title)
     this.meta.addTags([
@@ -22,5 +23,8 @@ export class SeoService {
       { name: 'twitter:card', content: 'summary'},
       { name: 'twitter:site', content: '@imasiftoo'}
     ])
+
+    console.log('Tags Generated....');
+    console.log('Tags Generated....');
   }
 }

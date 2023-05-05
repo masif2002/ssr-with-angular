@@ -1,0 +1,44 @@
+:host {
+    text-align: center;
+    padding: 24px;
+}
+mat-card {
+    max-width: 650px;
+    background-color:#212121; 
+    margin: 0 auto 10px;
+    padding: 20px;
+    overflow: hidden;
+}
+
+h1 {
+    color: white;
+    margin-bottom: 50px;
+    letter-spacing: 5px;
+}
+
+h2 {
+    letter-spacing: 7px;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    border-radius: 10px;
+    transition: transform 500ms ease-in-out;
+    cursor: crosshair
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+mat-card-content p {
+    font-style: italic;
+}
+
+
+.mat-mdc-card-header {
+    justify-content: center;
+}

@@ -1,0 +1,58 @@
+:host {
+    text-align: center;
+    padding: 24px;
+}
+
+h1 {
+    color: white;
+    margin-bottom: 50px;
+    letter-spacing: 5px;
+}
+
+h3 {
+    letter-spacing: 1px;
+}
+
+h4 {
+    color: #999999;
+    font-weight: 200;
+    padding-top: 10px;
+    letter-spacing: normal;
+    
+}
+
+mat-nav-list {
+    max-width: 600px;
+    background-color:#212121; 
+    padding: 0;
+    margin: 0 auto;
+}
+
+
+mat-list-item {
+
+    .mdc-list-item__content {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        align-self: center;
+        flex: none;
+        pointer-events: none;
+    }
+    transition: transform 300ms ease;
+    
+    &:hover {
+        transform: translateY(-3px);
+    }
+}
+
+.mdc-list-item--with-leading-icon .mdc-list-item__start {
+    color: white;
+    margin: 0;
+    padding: 20px
+}
+
+.left {
+    display: flex;
+    justify-content: start;
+}
