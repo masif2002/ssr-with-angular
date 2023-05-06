@@ -1,5 +1,5 @@
 # SSR with Angular
-A fun project to demonstrate Server Side Rendering (SSR) in Angular with **Angular Universal** and **NestJS**. The deployed version of the [app](https://ssr-with-angular.web.app/) only has prerendered pages for each route. SSR can be deployed online with the help of cloud services like [Google Cloud Run](https://cloud.google.com/run)   
+A fun project to demonstrate Server Side Rendering (SSR) in **Angular** with **Angular Universal** and **NestJS**. The deployed version of the [app](https://ssr-with-angular.web.app/) only has prerendered pages for each route. SSR can be deployed online with the help of cloud services like [Google Cloud Run](https://cloud.google.com/run)   
 
 ## Local Setup
 1. Clone the project 
@@ -32,4 +32,5 @@ A fun project to demonstrate Server Side Rendering (SSR) in Angular with **Angul
 ## Verify SSR
 * Head over to [ssr-with-angular.web.app](https://ssr-with-angular.web.app/) and choose a card
 * Go to the [twitter card validator](https://cards-dev.twitter.com/validator) and paste the link to see if the page has been rendered correctly
+![image](https://user-images.githubusercontent.com/94846379/236605983-1d6b9e5f-6bec-4ab1-a24a-52cba8bb98b5.png)
 * You can do the same once you've deployed your app online
