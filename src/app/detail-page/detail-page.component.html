@@ -22,7 +22,7 @@
 
     
 
-<mat-card *ngIf="customer | async as cust">
+<mat-card *ngIf="actualCustomer as cust">
   <mat-card-header>
     <mat-card-title>
       <h2>{{ cust.name }}</h2>

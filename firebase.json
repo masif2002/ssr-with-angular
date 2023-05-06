@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "ssr-with-angular",
     "public": "dist/ssr-with-angular/browser",
     "ignore": [
       "firebase.json",

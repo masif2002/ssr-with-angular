@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { tap } from 'rxjs/operators';
 import { SeoService } from '../services/seo.service';
@@ -10,9 +10,11 @@ import { AngularFirestore } from '@angular/fire/compat/firestore';
   templateUrl: './detail-page.component.html',
   styleUrls: ['./detail-page.component.scss']
 })
-export class DetailPageComponent implements OnInit{
+export class DetailPageComponent implements OnInit, OnDestroy {
   customerId: string
   customer: Observable<any>
+  actualCustomer: any
+  subscription: any
 
   constructor (
     private route: ActivatedRoute,
@@ -37,7 +39,13 @@ export class DetailPageComponent implements OnInit{
       )
     )
 
-    
+    this.subscription = this.customer.subscribe( c =>{
+      this.actualCustomer = c
+    })
+  }
 
+  ngOnDestroy(): void {
+    this.subscription.unsubscribe()
+    this.actualCustomer = null
   }
 }

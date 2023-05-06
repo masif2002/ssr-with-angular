@@ -10,7 +10,7 @@
     "dev:ssr": "ng run ssr-with-angular:serve-ssr",
     "serve:ssr": "node dist/ssr-with-angular/server/main.js",
     "build:ssr": "ng build && ng run ssr-with-angular:server",
-    "prerender": "ng run ssr-with-angular:prerender",
+    "prerender": "ng run ssr-with-angular:prerender --routes-file routes.txt",
     "prebuild:ssr": "ngcc"
     
   },

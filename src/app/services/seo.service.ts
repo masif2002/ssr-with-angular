@@ -25,6 +25,5 @@ export class SeoService {
     ])
 
     console.log('Tags Generated....');
-    console.log('Tags Generated....');
   }
 }
